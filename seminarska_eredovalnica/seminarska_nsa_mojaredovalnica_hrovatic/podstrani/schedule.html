@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Ikona v naslovu -->
+    <link rel="icon" href="../img/share-calendar.png">
+
+    <title>eRedovalnica</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Ikone -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- CSS animacije -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" integrity="sha256-00w68NO3TLuHjKRHJmjrrgJBDtG/6OhbJEu1gtHcsuo=" crossorigin="anonymous">
+
+    <!-- CSS po meri -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Menijska vrstica -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand wow fadeInDown" href="../index.html" data-wow-delay="0.3s">eRedovalnica</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Več <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../index.html"><i class="fa fa-bolt" aria-hidden="true"></i> Pregled</a></li>
+                                <li><a href="tests.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Testi</a></li>
+                                <li><a href="domace_naloge.html"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Domače naloge</a></li>
+                                <li><a href="schedule.html"><i class="fa fa-calendar" aria-hidden="true"></i> Urnik</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="login.html"><i class="fa fa-power-off" aria-hidden="true"></i> Odjava</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+
+
+    <!-- Vsebina -->
+    <main class="container">
+        <div class="page-header text-primary">
+            <h2><small class="glyphicon glyphicon-calendar"></small> Urnik</h2>
+        </div>
+        <div class="lead" style="font-size: 16px;">
+            <strong>Legenda:</strong>
+            <span class="legenda-padd"><img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_nadomescanje.png" alt="" class=""> Nadomeščanje</span>
+            <span class="legenda-padd"><img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_zaposlitev.png" alt="" class=""> Zaposlitev</span>
+            <span class="legenda-padd"><img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_odpadlo.png" alt="" class=""> Odpadla ura</span>
+            <span class="legenda-padd"><img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class=""> Dogodek</span>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered urnik wow zoomIn">
+                <thead>
+                    <tr>
+                        <th>Ura</th>
+                        <th class="active-dan">Ponedeljek</th>
+                        <th class="active-dan">Torek</th>
+                        <th class="active-dan">Sreda</th>
+                        <th class="active-dan">Četrtek</th>
+                        <th class="active-dan">Petek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h4><strong>1. ura</strong></h4> <small>7:10 - 7:55</small></td>
+                        <td>
+                            <h4><strong>MAT</strong></h4> <small>L. Frice, 311</small>
+                        </td>
+                        <td>
+                            <h4><strong>SLO</strong></h4> <small>G. Stepanovska, 318</small>
+                        </td>
+                        <td>
+                            <h4><strong>NUPB-v</strong></h4> <small>R. Premović, 229</small>
+                        </td>
+                        <td>
+                            <h4><strong>NUPB</strong></h4> <small>R. Premović, 229</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>2. ura</strong></h4> <small>8:00 - 8:45</small>
+                        </td>
+                        <td>
+                            <h4><strong>SOC</strong></h4> <small>S. Valantič, 320</small>
+                        </td>
+                        <td>
+                            <h4><strong>SLO</strong></h4> <small>G. Stepanovska, 318</small>
+                        </td>
+                        <td>
+                            <h4><strong>NUPB-v</strong></h4> <small>R. Premović, 229</small>
+                        </td>
+                        <td>
+                            <h4><strong>NUPB</strong></h4> <small>R. Premović, 229</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>3. ura</strong></h4> <small>8:50 - 9:35</small></td>
+                        <td>
+                            <h4><strong>ROM</strong></h4> <small>T. Ferbežar, 227</small>
+                        </td>
+                        <td>
+                            <h4><strong>ŠVZ</strong></h4> <small>K. Turk, TV 8</small>
+                        </td>
+                        <td>
+                            <h4><strong>RAO</strong></h4> <small>J. Petric, 226</small>
+                        </td>
+                        <td>
+                            <h4><strong>SOC</strong></h4> <small>S. Valantič, 320</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>4. ura</strong></h4> <small>9:40 - 10:25</small></td>
+                        <td>
+                            <h4><strong>ROM</strong></h4> <small>T. Ferbežar, 227</small>
+                        </td>
+                        <td>
+                            <h4><strong>UMAT</strong></h4> <small>L. Frice, 311</small>
+                        </td>
+                        <td>
+                            <h4><strong>RAO</strong></h4> <small>J. Petric, 226</small>
+                        </td>
+                        <td>
+                            <h4><strong>NSA</strong></h4> <small>S. Vovko, N2</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>5. ura</strong></h4> <small>10:30 - 11:15</small></td>
+                        <td>
+                            <h4><strong>ŠVZ</strong></h4> <small>K. Turk, TV 8</small>
+                        </td>
+                        <td>
+                            <h4><strong>VSO</strong></h4> <small>T. Jerič, N2</small>
+                        </td>
+                        <td>
+                            <h4><strong>VSO-p</strong></h4> <small>D. Čurk, DE3</small>
+                        </td>
+                        <td>
+                            <h4><strong></strong></h4> <small></small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>6. ura</strong></h4> <small>11:20 - 12:05</small></td>
+                        <td>
+                            <h4><strong>ŠVZ</strong></h4> <small>K. Turk, TV 8</small>
+                        </td>
+                        <td>
+                            <h4><strong>ANG</strong></h4> <small>J. Plisson, 313</small>
+                        </td>
+                        <td>
+                            <h4><strong>NUPB-p</strong></h4> <small>D. Čurk, DE3</small>
+                        </td>
+                        <td>
+                            <h4><strong>VSO</strong></h4> <small>T. Jerič, 309</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>7. ura</strong></h4> <small>12:10 - 12:55</small></td>
+                        <td>
+                            <h4><strong>NSA-v</strong></h4> <small>S. Vovko, 227</small>
+                        </td>
+                        <td>
+                            <h4><strong>ANG</strong></h4> <small>J. Plisson, D24</small>
+                        </td>
+                        <td>
+                            <h4><strong>RAO-p</strong></h4> <small>D. Čurk, DE3</small>
+                        </td>
+                        <td>
+                            <h4><strong>MAT</strong></h4> <small>L. Frice, 322</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><strong>8. ura</strong></h4> <small>13:00 - 13:45</small></td>
+                        <td>
+                            <h4><strong>NSA-v</strong></h4> <small>S. Vovko, 227</small>
+                        </td>
+                        <td>
+                            <h4><strong>UMAT</strong></h4> <small>L. Frice, 307</small>
+                        </td>
+                        <td>
+                            <h4><strong>RAO-p</strong></h4> <small>D. Čurk, DE3</small>
+                        </td>
+                        <td>
+                            <h4><strong>MAT</strong></h4> <small>L. Frice, 322</small>
+                        </td>
+                        <td>
+                            <h4><strong>Dijaški koncert</strong></h4>
+                            <img src="https://www.easistent.com/images/icons/ednevnik_seznam_ur_dogodek.png" alt="" class="pull-right">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=2&amp;hl=sl&amp;bgcolor=%23FFFFFF&amp;src=sl.slovenian%23holiday%40group.v.calendar.google.com&amp;color=%23875509&amp;ctz=Africa%2FCeuta" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </main>
+
+
+    <!-- Noga -->
+    <footer class="container-fluid">
+        <div class="copyright">
+            &copy; 2016 Mitja Hrovatič
+            <hr class="hr-footer">
+            <div class="design">
+                <h4>Design with</h4> <i class="fa"><img src="../img/css3_html5_jquery_bootstrap.png" alt="" class="img-responsive" width="250"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SKRIPTE -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
+    <!-- WOW effect animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script>
+        $('.dropdown').on('show.bs.dropdown', function (e) {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+        });
+
+        $('.dropdown').on('hide.bs.dropdown', function (e) {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(300);
+        });
+    </script>
+
+
+</body>
+
+</html>

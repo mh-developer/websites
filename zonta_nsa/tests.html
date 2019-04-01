@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mojaRedovalnica</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">mojaRedovalnica</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Pregled</a></li>
+                    <li><a href="schedule.html">Urnik</a></li>
+                    <li><a href="tests.html">Testi</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Šolsko leto <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">2016/17</a></li>
+                            <li><a href="#">2015/16</a></li>
+                            <li><a href="#">2014/15</a></li>
+                            <li><a href="#">2013/14</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="login.html" class="odjava"><span class="glyphicon glyphicon-remove-circle"></span> Odjava</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-header text-primary">
+            <h2>Napovedana ocenjevanja znanja <small class="pull-right"><a class="glyphicon glyphicon-plus text-primary" data-toggle="modal" data-target="#myModal"></a></small></h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <table class="table">
+            <thead>
+                <tr>
+                    <th>Pisna ocenjevanja</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong class="text-primary">Slovenščina</strong> <small>1. kontrolna naloga</small></td>
+                    <td><span class="pull-right">16. 12. 2016</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Uporabna matematika</strong> <small>Geometrija</small> </td>
+                    <td><span class="pull-right">20. 12. 2016</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Sociologija</strong> <small>Kontrolna naloga</small> </td>
+                    <td><span class="pull-right">6. 4. 2017</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Angleščina</strong> <small>Modal verbs</small> </td>
+                    <td><span class="pull-right">10. 1. 2017</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Matematika</strong> <small>Kontrolna naloga</small> </td>
+                    <td><span class="pull-right">26. 1. 2017</span></td>
+                </tr>
+            </tbody>
+        </table>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <table class="table">
+            <thead>
+                <tr>
+                    <th>Ustna ocenjevanja</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong class="text-primary">Slovenščina</strong> <small>Spraševanje</small></td>
+                    <td><span class="pull-right">16. 12. 2016</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Uporabna matematika</strong> <small>Spraševanje</small> </td>
+                    <td><span class="pull-right">20. 12. 2016</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Sociologija</strong> <small>Spraševanje</small> </td>
+                    <td><span class="pull-right">6. 4. 2017</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Angleščina</strong> <small>Spraševanje</small> </td>
+                    <td><span class="pull-right">10. 1. 2017</span></td>
+                </tr>
+                <tr>
+                    <td><strong class="text-primary">Matematika</strong> <small>Spraševanje</small> </td>
+                    <td><span class="pull-right">26. 1. 2017</span></td>
+                </tr>
+            </tbody>
+        </table>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Vnesi novo ocenjevanje znanja</h4>
+                    </div>
+                    <div class="modal-body">
+                        Dodaj nekaj po svoji želji
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Prekliči</button>
+                        <button type="button" class="btn btn-primary">Dodaj</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="copyright">&copy; 2016 Nejc Žonta</div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

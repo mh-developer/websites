@@ -1,0 +1,55 @@
+        #wrapper{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .logo{
+            max-height: 80px;
+            margin: -50px 0 0 0;
+            padding: 0 40px 0 0;
+        }
+        nav{
+            padding: 50px 0 0 0;
+            max-width: 1200px;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+        main{
+            padding-top: 110px;
+            padding-bottom: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        footer{
+            background: #EAEEED;
+            padding: 50px 50px 20px 50px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            border-top: 2px solid #ABAEAE;
+            text-align: center;
+        }
+        .btn-social-icon{
+            color: #222222;
+        }
+        .btn-social-icon:hover{
+            color: deepskyblue;
+        }
+        .nakup-img{
+            width: 1170px;
+        }
+        .form-group{
+            max-width: 400px;
+        }
+        .media-object{
+            max-width: 400px;
+        }
+        .servis-img{
+            width: 1170px;
+        }
+        .kontakt-img{
+             width: 1170px;
+            padding-bottom: 20px;
+        }
+        .copyright{
+            text-align: center;
+        }

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.odjava {
+    color: #ff5f1f !important;
+}
+
+.copyright {
+    background: linear-gradient(to left, #8E0E00, #1F1C18);
+    color: white;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 5px 5px 0 0;
+}
+
+a:hover {
+    text-decoration: none;
+}

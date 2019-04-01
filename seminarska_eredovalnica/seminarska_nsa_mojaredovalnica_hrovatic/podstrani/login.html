@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Ikona v naslovu -->
+    <link rel="icon" href="../img/share-calendar.png">
+
+    <title>eRedovalnica</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Ikone -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- CSS animacije -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" integrity="sha256-00w68NO3TLuHjKRHJmjrrgJBDtG/6OhbJEu1gtHcsuo=" crossorigin="anonymous">
+
+    <!-- CSS po meri -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Menijska vrstica -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand wow fadeInDown" href="login.html" data-wow-delay="0.3s">eRedovalnica</a>
+                </div>
+            </div>
+            <!-- /.container -->
+        </nav>
+    </header>
+
+
+    <!-- Vsebina -->
+    <main class="container main-login">
+        <div class="jumbotron wow bounceIn" data-wow-duration="1.2s" data-wow-delay="0.8s">
+            <h2 class="prijava text-center">Prijava</h2>
+            <form action="" method="get" id="login" class="form-horizontal login text-center" autocomplete="off" role="form" data-toggle="validator">
+                <div class="neuspesno"></div>
+                <div class="form-group">
+                    <label class="sr-only" for="user">Uporabniško ime</label>
+                    <input type="text" class="form-control" id="user" name="user" placeholder="Uporabniško ime" data-error="*Izpolnite to polje" required>
+                    <div class="help-block with-errors text-left"></div>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="pass">Geslo</label>
+                    <input type="password" class="form-control" id="pass" name="userpass" placeholder="Geslo" data-error="*Izpolnite to polje" required>
+                    <div class="help-block with-errors text-left"></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-login">Prijava</button>
+            </form>
+            <div class="login-options text-center">
+                <a href="" data-toggle="modal" data-target="#singup">Registracija</a> -
+                <a href="" data-toggle="modal" data-target="#poz_geslo">Pozabljeno geslo</a>
+            </div>
+        </div>
+
+
+
+        <!-- Modal registracija -->
+        <div class="modal fade" id="singup" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content page-login-color">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Registracija</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="ime">Ime</label>
+                                <input type="text" class="form-control" id="ime" placeholder="Osebno ime" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="priimek">Priimek</label>
+                                <input type="text" class="form-control" id="priimek" placeholder="Vaš priimek" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobi">Mobilna številka</label>
+                                <input type="text" class="form-control" id="mobi" placeholder="Mobitel" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Elektronski naslov</label>
+                                <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="oddelek">Oddelek</label>
+                                <input type="text" class="form-control" id="oddelek" placeholder="Razred" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Smer izobraževanja</label>
+                                <input type="text" class="form-control" id="poklic" placeholder="Smer">
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox" id="pogojiuporabe">
+                                    <label>
+                                        <input type="checkbox" required> S klikom na Registracija potrjuješ, da se strinjaš z našimi Pogoji uporabe in da si prebral našo Podatkovno politiko, vključno z Uporabo piškotkov.
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Registracija <span class="glyphicon glyphicon-play-circle"></span></button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <!-- Modal Pozabljeno geslo -->
+        <div class="modal fade" id="poz_geslo" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content page-login-color">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Pozabljeno geslo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <div class="form-group">
+                                <label for="forgotpass">Vaš elektronski naslov ali uporabniško ime</label>
+                                <input type="email" class="form-control" id="forgotpass" required>
+                                <br>
+                                <small>Navodila za ponastavitev gesla boste prejeli na vaš elektronski naslov.</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Pošlji <span class="glyphicon glyphicon-play-circle"></span></button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </main>
+
+
+    <!-- Noga -->
+    <footer class="container-fluid">
+        <div class="copyright">
+            &copy; 2016 Mitja Hrovatič
+            <hr class="hr-footer">
+            <div class="design">
+                <h4>Design with</h4> <i class="fa"><img src="../img/css3_html5_jquery_bootstrap.png" alt="" class="img-responsive" width="250"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SKRIPTE -->
+
+    <!-- jQuery -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
+    <!-- WOW effect animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#login').validator().submit(function (event) {
+                var user = $('#user').val();
+                var pass = $('#pass').val();
+                if (user === 'admin' && pass === 'admin') {
+                    $('#login').attr('action', '../index.html')
+                } else {
+                    event.preventDefault();
+                    $('.neuspesno').html('<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Neuspešna prijava, poskusite ponovno.</div>');
+                    $(".login").trigger('reset');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

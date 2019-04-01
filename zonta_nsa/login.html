@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mojaRedovalnica</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="login.html">mojaRedovalnica</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <h3 class="text-primary">Prijava za uporabnike</h3>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Uporabnik</label>
+                        <input type="text" class="form-control" id="username" placeholder="Uporabniško ime">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Geslo</label>
+                        <span class="pull-right"><a href="" data-toggle="modal" data-target="#myModal">Ste pozabili geslo?</a></span>
+                        <input type="password" class="form-control" id="geslo" placeholder="Geslo">
+                    </div>
+                    <button class="btn btn-primary" type="submit"><a href="index.html" style="color:white;" role="button">Prijava <span class="glyphicon glyphicon-play-circle"></span></a></button>
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Pozabljeno geslo</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" method="post">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Vaš elektronski naslov</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                        <br>
+                                        <small>Navodila za ponastavitev gesla boste prejeli na vaš elektronski naslov.</small>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Prekliči</button>
+                                <button type="submit" class="btn btn-primary">Pošlji</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-12"></div>
+            <div class="col-md-4 col-xs-12">
+                <h3 class="text-primary">Registracija za nove uporabnike</h3>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Ime</label>
+                        <input type="text" class="form-control" id="ime" placeholder="Osebno ime">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Priimek</label>
+                        <input type="text" class="form-control" id="priimek" placeholder="Vaš priimek">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Naslov</label>
+                        <input type="text" class="form-control" id="naslov" placeholder="Kraj stalnega prebivališča">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Pošta</label>
+                        <input type="text" class="form-control" id="posta" placeholder="Poštna številka">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Datum rojstva</label>
+                        <input type="text" class="form-control" id="datum" placeholder="Rojstni datum">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Razred</label>
+                        <input type="text" class="form-control" id="letnik" placeholder="Letnik">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Smer izobraževanja</label>
+                        <input type="text" class="form-control" id="poklic" placeholder="Smer">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registracija <span class="glyphicon glyphicon-play-circle"></span></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="copyright">&copy; 2016 Nejc Žonta</div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

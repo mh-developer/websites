@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1. Domača naloga</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body onload="loadLocalStorage()">
+    <header>
+        <nav class="navigation">
+            <div>
+                <a href="index.html">Prva stran</a>
+            </div>
+            <div>
+                <a href="pages/viri.html">Viri in literatura</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form id="input-form">
+            <div class="form-header">
+                <h3>Dodajanje izdelka</h3>
+            </div>
+            <div class="form-container">
+                <div class="form-control">
+                    <label for="znamka-input">Znamka</label>
+                    <div class="form-znamka">
+                        <input type="text" id="znamka-input" oninput="znamkaValidacija()" required>
+                        <span class="error">To polje je obvezno</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="naziv-input">Naziv</label>
+                    <div class="form-naziv">
+                        <input type="text" id="naziv-input" oninput="nazivValidacija()" required>
+                        <span class="error">To polje je obvezno</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="zaloga-input">Zaloga</label>
+                    <div class="form-zaloga">
+                        <select name="zaloga" id="zaloga-input" oninput="zalogaValidacija()" required>
+                            <option value="">-- Prosimo izberite vrednost --</option>
+                            <option value="Na zalogi">Na zalogi</option>
+                            <option value="Ni na zalogi">Ni na zalogi</option>
+                            <option value="V skladišču">V skladišču</option>
+                        </select>
+                        <span class="error">To polje je obvezno</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="cena-input">Cena</label>
+                    <div class="form-cena">
+                        <input type="text" id="cena-input" oninput="cenaValidacija()" required>
+                        <span class="error">To polje je obvezno</span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="uploadIzdelek">Slika izdelka</label>
+                    <div>
+                        <input type="file" name="uploadIzdelek" id="uploadIzdelek" accept="image/png, image/jpeg"
+                            onchange="convertImgToBase64()">
+                        <span class="error"></span>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="opis-izdelka-input">Opis</label>
+                    <div class="form-opis">
+                        <textarea name="opis-izdelka" cols="40" rows="4" id="opis-izdelka-input"
+                            oninput="opisValidacija()" required></textarea>
+                        <span class="error">Minimalna dolžina je 20 znakov, maksimalna pa 300 znakov</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button type="button" class="btn cancel" id="cancel-form">Prekliči</button>
+                <button type="button" class="btn" id="add-form-item" onclick="addNewItem()">Dodaj</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="search">
+        <form>
+            <div>
+                <input type="search" id="input-search" placeholder="Iskanje ..." oninput="search()">
+                <span class="error"></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="wrapper">
+        <div class="col-2 filtri">
+            <h3>Filtri</h3>
+            <div class="uredi">
+                <div>
+                    <button class="btn najcenejsi" onclick="najcenejsi()">Najcenejši</button>
+                </div>
+                <div>
+                    <button class="btn najdrazji" onclick="najdrazji()">Najdražji</button>
+                </div>
+                <div>
+                    <button class="btn osnovni" onclick="refreshItems()">Osnovno</button>
+                </div>
+                <div>
+                    <h3>Zaloga</h3>
+                    <div>
+                        <input type="radio" name="zaloga" id="da" value="Na zalogi">
+                        <label for="da">Na zalogi</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="zaloga" id="ne" value="Ni na zalogi">
+                        <label for="ne">Ni na zalogi</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="zaloga" id="skladisce" value="V skladišču">
+                        <label for="skladisce">V skladišču</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn" id="resetFilter">Ponastavi</button>
+            </div>
+        </div>
+        <div class="col-10 izdelki">
+            <h3>Izdelki</h3>
+            <button class="btn add-izdelek" id="dodajanje-produkta">&plus;</button>
+            <div class="izdelki-grid"></div>
+        </div>
+
+        <footer class="text-center">
+            2019 &copy; Mitja Hrovatič
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

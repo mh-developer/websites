@@ -1,0 +1,324 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #F1F1F1;
+    margin: 0 !important;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 'filtri' 'izdelki' 'footer';
+    margin: 15px 15px 0 15px;
+    grid-gap: 5px;
+}
+
+.responsive-img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #454545;
+    border-bottom: 1px solid #777;
+    padding: 10px 5px;
+}
+
+.warning {
+    background-color: #ffc107;
+}
+
+.red {
+    background-color: #dc3545;
+}
+
+.green {
+    background-color: #28a745;
+}
+
+.blue {
+    background-color: #007bff;
+}
+
+.border-error {
+    border: 1px solid #dc3545 !important;
+}
+
+.border-success {
+    border: 1px solid #28a745 !important;
+}
+
+.error {
+    display: none;
+    font-size: 11px;
+    color: #dc3545 !important;
+    margin-left: 25px;
+}
+
+header {
+    position: fixed;
+    background: #343A40;
+    width: 100%;
+    top: 0;
+}
+
+.navigation {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.navigation * {
+    font-weight: lighter;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    padding: 25px 0;
+}
+
+.navigation>div:hover {
+    border-bottom: 5px solid yellow;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 30px 25px 25px 25px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.navigation a:hover {
+    color: #fff;
+}
+
+.viri-literatura {
+    text-align: center;
+    margin-top: 75px;
+}
+
+.filtri {
+    grid-area: filtri;
+}
+
+#input-form {
+    position: absolute;
+    display: none;
+    top: 75px;
+    right: 5%;
+    left: 5%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 2px 14px #bbb;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.form-footer {
+    margin: 25px 0 0 0;
+    text-align: center;
+}
+
+.form-control {
+    margin: 10px 30px 0 0;
+}
+
+.form-control label {
+    margin-left: 20px;
+}
+
+.form-control input, .form-control textarea, .form-control select {
+    border-radius: 25px;
+    padding: 12px 12px 12px 20px;
+    margin: 12px 0 0 0 !important;
+    font-size: 14px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    box-shadow: 0 1px 12px #bbb;
+    width: 100% !important;
+    outline: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control input:focus, .form-control textarea:focus, .form-control select:focus {
+    box-shadow: 0 1px 4px #bbb;
+}
+
+.search {
+    margin-top: 75px;
+}
+
+.search div {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+
+#input-search {
+    border-radius: 25px;
+    padding: 16px 16px 16px 25px;
+    margin: 10px 0 0 0 !important;
+    font-size: 18px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    box-shadow: 0 2px 14px #bbb;
+    outline: 0;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+#input-search:focus {
+    box-shadow: 0 1px 4px #bbb;
+}
+
+.btn {
+    padding: 10px 25px;
+    color: #F1F1F1;
+    border-radius: 50px !important;
+    border: 0.5px solid silver;
+    margin: 2px 0;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 5px 10px #bbb;
+    background-color: #007BFF;
+    cursor: pointer;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent !important;
+    color: #454545;
+    box-shadow: 0 0px 5px #bbb;
+}
+
+.najcenejsi, .najdrazji, .osnovni {
+    width: 100%;
+    background-color: #007BFF;
+    letter-spacing: 3px;
+}
+
+.btn.cancel {
+    background-color: #dc3545;
+}
+
+.add-izdelek {
+    background-color: #007bff !important;
+    border-radius: 100% !important;
+    padding: 5px 15px !important;
+    font-size: 28px;
+}
+
+.manage-item {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.izdelki {
+    grid-area: izdelki;
+}
+
+.izdelki-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+}
+
+.item {
+    margin: 5px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.item .opis {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-weight: normal !important;
+    word-wrap: break-word;
+}
+
+.vrednost-izdelka {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.vrednost-izdelka .zaloga {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.vrednost-izdelka .cena {
+    text-align: right;
+    font-weight: bold;
+}
+
+footer {
+    grid-area: footer;
+    padding: 25px 0;
+    margin: 15px 0 5px 0;
+    border-top: 1px solid #454545
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 'filtri izdelki' 'footer footer';
+    }
+
+    .btn {
+        border-radius: 12px;
+        margin: 5px;
+    }
+
+    .najcenejsi, .najdrazji, .osnovni {
+        background-color: #007BFF;
+        width: 90%;
+    }
+
+    .izdelki-grid {
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 'filtri izdelki' 'footer footer';
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 45% 45%;
+    }
+
+    .form-control {
+        margin: 10px 30px;
+    }
+
+    .search div {
+        grid-template-columns: 60%;
+    }
+
+    .btn {
+        border-radius: 12px;
+        margin: 5px;
+    }
+
+    .najcenejsi, .najdrazji, .osnovni {
+        background-color: #007BFF;
+        width: 200px;
+    }
+
+    .izdelki-grid {
+        grid-template-columns: repeat(auto-fill, 33%);
+    }
+}

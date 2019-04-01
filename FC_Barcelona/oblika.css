@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100);
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-image: url(img/CampNou.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+}
+.navbar {
+    background: url("img/header_bg.jpg") no-repeat 50% 50%;
+    height: 100px;
+    border: 0;
+    z-index: 5;
+}
+.nav li a {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 18px;
+    margin-top: 20px;
+    z-index: 5;
+}
+@media (max-width: 768px){
+    .navbar-nav {
+        background: url("img/header_bg.jpg");
+    }
+}
+.nav li a:hover {
+    background-color: #9C1737 !important;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px){
+    .img-responsive{
+        max-width: 225px;
+    }
+}
+@media (max-width: 480px){
+    .carousel {
+        margin: 0 auto;
+    }
+    .carousel-caption {
+        text-align: left !important;
+        margin-left: -30px;
+    }
+    hr{
+        color: silver;
+        max-width: 80px;
+        margin-left: 0;
+    }
+}
+@media (min-width: 930px){
+    .carousel {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .carousel-caption {
+        text-align: left !important;
+        margin-left: -80px;
+    }
+}
+.st, .podatki {
+	color: #FBCB60;
+    font-weight: bold;
+}
+@media (max-width: 768px){
+    .st, .podatki, h4, hr, .size-ime {
+        font-size: 11px;
+        padding: 0 !important;
+        margin: 2px !important;
+    }
+    .carousel-caption{
+        margin-bottom: -30px;
+    }
+}
+@media (min-width: 930px){
+    hr {
+        color: silver;
+        max-width: 200px;
+        margin-left: 0;
+    }
+}
+.sp{
+    padding: 25px;
+}
+.spon{
+    padding: 10px;
+}
+.sponsors {
+	background: url(img/sponsors_bg.jpg) no-repeat #14161A;
+    background-size: cover;
+}
+.sponzor-padding {
+	padding: 50px !important;
+}
+.page-header {
+	border-bottom: 5px solid #9C1737;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    color: white;
+}
+footer {
+    background-color: #D3D6D7;
+    text-align: center;
+    padding: 30px;
+}
+.store {
+	background-image: url(img/Carrusel_BG.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.trgovina {
+	margin-bottom: 50px;
+}
+.gumb {
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    background-color: #5A0F32 !important;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.jumbotron {
+	background-color: #0F2A56;
+    color: silver;
+}
+.naslov1 {
+	margin: 0;
+    margin-bottom: 50px;
+}
+.lead {
+	color: white;
+}
+.črta {
+	border-bottom: 5px solid #9B1637;
+    border-radius: 1px;
+}

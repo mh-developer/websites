@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/icon.png">
+    <title>M-tranS</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+    
+    <style>
+        body{
+            font-family: 'Open Sans', sans-serif;;
+            font-weight: 700;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav{
+            margin: 10px 0 0 0; 
+            padding: 10px;
+        }
+        .logo-img{
+            max-height: 30px;
+            margin: 0 50px 0 100px;
+        }
+        main{
+            border: 1px solid silver;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 0 0 10px 0;
+        }
+       .domov-img{
+           max-width: 700px;
+           border-radius: 5px;
+           color: white;
+        }
+        form{
+            max-width: 500px;
+        }
+        footer{
+            background: #2A2730;
+            color: white;
+            border-radius: 5px;
+            padding: 30px;
+            margin-bottom: 10px;
+        }
+        .slika{
+            max-width: 750px;
+            border-radius: 5px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="domov.html"><img src="img/LOGO.JPG" alt="" class="logo-img"></a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li ><a href="domov.html">Domov</a></li>
+                    <li><a href="predstavitav.html">Predstavitev</a></li>
+                    <li><a href="storitve.html">Storitev</a></li>
+                    <li><a href="povprasevanje.html">Povpraševanje</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        
+        <main>
+            <div class="page-header">
+              <h2>Povpraševanje</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <form>
+                <div class="form-group">
+                    <label for="exampleInputIme">Ime</label>
+                    <input type="text" class="form-control" id="exampleInputIme" placeholder="Ime">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPriimek">Priimek</label>
+                    <input type="text" class="form-control" id="exampleInputPriimek" placeholder="Priimek">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputTelefon">Telefon</label>
+                    <input type="text" class="form-control" id="exampleInputTelefon" placeholder="Telefon">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputMessage">Kaj vas zanima?</label>
+                    <textarea class="form-control" rows="7" placeholder="Sporočilo"></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-default">Pošlji</button>
+            </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/SLIKA3.jpg" alt="" class="slika">
+                </div>
+            </div>
+        </main>
+        
+        <footer class="text-center">
+            &copy; 2016 Mitja Hrovatič
+        </footer>
+    </div>
+    
+    
+    
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

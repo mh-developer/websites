@@ -1,0 +1,98 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 50px;
+}
+
+.titlePicture{
+    height: 320px;
+    background-image: url("img/greenday.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.menu {
+	text-align: center;
+}
+.menuLink {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    width: 130px;
+}
+.activeItem{
+    background-color: seagreen;
+    color: white;
+}
+
+.menuLink:hover{
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.about{
+    color: seagreen;
+    font-size: 35px;
+    text-align: center;
+}
+.store {
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+}
+.storeimg {
+    width: 1000px;
+    height: 400px;
+}
+.napis {
+	margin: -130px 0 0 90px;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+}
+.napis small{
+	font-weight: 100;
+    font-size: 24px;
+}
+.main {
+    text-align: center;
+}
+.igralec {
+	display: inline-block;
+    padding: 40px;
+}
+.img img{
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 10px 0px 5px grey;
+    width: 200px;
+}
+.vsebina {
+	width: 250px;
+    padding-top: 15px;
+}
+.vsebina1 {
+	width: 245px;
+    padding-top: 15px;
+}
+.album {
+	display: inline-block;
+}
+.music {
+	padding-top: 15px;
+}
+.imgtour img {
+	width: 900px;
+    height: 400px;
+}
+.video iframe {
+	width: 70%;
+    height: 350px;;
+}
+footer{
+    padding-top: 15px;
+    border-top: 1px solid black;
+}

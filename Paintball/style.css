@@ -1,0 +1,87 @@
+body{
+    font-family: 'Josefin Sans', sans-serif; 
+    font-weight: 700;
+    margin: auto;
+    background-image: url(img/bg_piece.jpg);
+    background-attachment: fixed;
+}
+header{
+    font-size: 20px;
+    background-image: url(img/header_bg.jpg);
+}
+nav{
+    height: 115px;
+}
+.navbar-nav{
+    margin-top: 35px;
+    margin-left: 125px;
+}
+.logo{
+    max-height: 100px;
+    margin-top: -5px;
+    margin-left: 100px;
+}
+
+.jumbotron{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 15px 0 15px;
+}
+.gal{
+    width: 100%;
+}
+.padding{
+    padding: 0 25px 0 25px;
+}
+.thumbnail{
+    border-radius: 0px;
+    border: 0px;
+    background-image: url(img/content_bg.jpg);
+    color: white;
+    width: 390px;
+}
+.bg{
+    background-image: url(img/page_image_up.jpg);
+    background-repeat: no-repeat;
+    background-size : 500px 10px;
+    border-radius: 0px;
+    border: 0px;
+}
+.img{
+    margin-top: 10px;
+    width: 382px;
+}
+.caption{
+    font-style: italic;
+    font-size: 18px;
+}
+.naslov {
+	box-shadow: 0px 8px 7px black;
+    font-style: italic;
+    font-size: 18px;
+    padding: 20px;
+    padding-top: 0px;
+    font-weight: bolder;
+    margin-left: -3px;
+    width: 102%;
+}
+.naslov1 {
+	box-shadow: 0px 8px 7px black;
+    font-style: italic;
+    font-size: 18px;
+    padding: 20px;
+    padding-top: 0px;
+    font-weight: bolder;
+    margin-left: -3px;
+    width: 101%;
+}
+.besedilo {
+	color: silver;
+}
+.kontakt {
+	width: 900px;
+    margin: 0 auto;
+}

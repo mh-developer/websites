@@ -3,24 +3,14 @@
 
 ### List of sites
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* <a href="./Adria_Mobil/">Adria_Mobil</a>
+* <a href="./FC_Barcelona/">FC_Barcelona</a>
+* <a href="./GreenDay/">GreenDay</a>
+* <a href="./M-tranS/">M-tranS</a>
+* <a href="./Paintball/">Paintball</a>
+* <a href="./PGD_Dole_pri_Litiji/">PGD_Dole_pri_Litiji</a>
+* <a href="./seminarska_eredovalnica/seminarska_nsa_mojaredovalnica_hrovatic/">eRedovalnica</a>
+* <a href="./seminarska_eredovalnica_pecjak/">eRedovalnica MDB</a>
+* <a href="./spletna_trgovina/">Spletna trgovina</a>
+* <a href="./Volkswagen/">Volkswagen</a>
+* <a href="./zonta_nsa/">eRedovalnica 1.0</a>
